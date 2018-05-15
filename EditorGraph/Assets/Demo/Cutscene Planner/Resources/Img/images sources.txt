@@ -1,0 +1,10 @@
+next.png 	 - https://material.io/icons/#ic_skip_next
+pause.png 	 - https://material.io/icons/#ic_pause
+play.png 	 - https://material.io/icons/#ic_play_arrow
+previous.png - https://material.io/icons/#ic_skip_previous 
+stop.png 	 - https://material.io/icons/#ic_stop
+
+arrow_up.png   - https://material.io/icons/#ic_arrow_drop_up
+arrow_down.png - https://material.io/icons/#ic_arrow_drop_down
+
+cutscene_icon.png - https://material.io/icons/#ic_local_movies

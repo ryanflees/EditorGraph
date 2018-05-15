@@ -1,0 +1,128 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 0e855adb71e0fea409680fd8642d3629, type: 3}
+  m_Name: Example cutscene
+  m_EditorClassIdentifier: 
+  TimeTicks: 10610000
+  AudioClip: {fileID: 8300000, guid: 896b603bdc8c49c45984ea5d79b8d69e, type: 3}
+  AudioClipStartTimeTicks: 0
+  DurationTicks: 20000000
+  Scenes:
+  - Name: Camera movement
+    Color: {r: 0.7, g: 0.7, b: 0.7, a: 1}
+    _startTicks: 0
+    _endTicks: 0
+    Desc: 'Camera is facing floor with light bevel, slowly moving forward. During
+      movement, camera is slightly raising his view angle.
+
+
+      Title appears "Under the Dragon''s Diamond presets..."'
+    ConceptArt: {fileID: 2800000, guid: c889c3dd866fdfb4c83a69cef11c815f, type: 3}
+  - Name: Light Spot
+    Color: {r: 0.9448277, g: 1, b: 0, a: 1}
+    _startTicks: 0
+    _endTicks: 0
+    Desc: Suddenly camera stops and the spot light brighter the floor.
+    ConceptArt: {fileID: 2800000, guid: 3963f086d06c4d1459a6f28f226df3c7, type: 3}
+  - Name: Jumping cube
+    Color: {r: 0.7, g: 0.7, b: 0.7, a: 1}
+    _startTicks: 0
+    _endTicks: 0
+    Desc: Camera change view. Cube starts to be pushed by impulse force.
+    ConceptArt: {fileID: 2800000, guid: 64459c5cc6f06fb488ed9347f102dcdc, type: 3}
+  - Name: Falling cube
+    Color: {r: 0.7, g: 0.7, b: 0.7, a: 1}
+    _startTicks: 0
+    _endTicks: 0
+    Desc: 'Gray cube falls from the sky, on the center of the spot light.
+
+      Camera looks at the cube from bottom and follows its fall.
+
+      With that, text from last scene immediately changes to:
+
+      "Dancing cube"'
+    ConceptArt: {fileID: 2800000, guid: 6e66cd5a31d77484ba9a83dcac1ced7b, type: 3}
+  - Name: Jumping cube 2
+    Color: {r: 0.7, g: 0.7, b: 0.7, a: 1}
+    _startTicks: 0
+    _endTicks: 0
+    Desc: Camera changes view again. Cube movement stays the same.
+    ConceptArt: {fileID: 2800000, guid: 3b4ab092b774ab44a800a1e2004da98d, type: 3}
+  - Name: Cube cross
+    Color: {r: 0.7, g: 0.7, b: 0.7, a: 1}
+    _startTicks: 0
+    _endTicks: 0
+    Desc: Camera changes view again. Cube moves left right and forward backward on
+      the plane of cross.
+    ConceptArt: {fileID: 2800000, guid: 6565846d6d2330f44a8dd726aa552ec4, type: 3}
+  - Name: Lot of cubes
+    Color: {r: 0.7, g: 0.7, b: 0.7, a: 1}
+    _startTicks: 0
+    _endTicks: 0
+    Desc: Suddenly lot of cubes jump into scene and start to be randomly pushed by
+      force.
+    ConceptArt: {fileID: 2800000, guid: 656ed1ad7b4a78b489413577de4130a4, type: 3}
+  - Name: The End
+    Color: {r: 0.7, g: 0.7, b: 0.7, a: 1}
+    _startTicks: 0
+    _endTicks: 0
+    Desc: With sound ends, pushing force is stopped and screnn slowly fade away.
+    ConceptArt: {fileID: 0}
+  - Name: Falling lot of cubes
+    Color: {r: 0.7, g: 0.7, b: 0.7, a: 1}
+    _startTicks: 0
+    _endTicks: 0
+    Desc: Suddenly lot of gray cube falls from the sky, on the center of the spot
+      light.
+    ConceptArt: {fileID: 2800000, guid: 66d2e128757934a41a195c22d4921209, type: 3}
+  TimeLabelsData:
+  - Name: Silence
+    Color: {r: 1, g: 0, b: 0, a: 1}
+    _startTicks: 0
+    _endTicks: 0
+  - Name: Silence
+    Color: {r: 1, g: 0, b: 0, a: 1}
+    _startTicks: 0
+    _endTicks: 0
+  - Name: Violin
+    Color: {r: 0, g: 1, b: 1, a: 1}
+    _startTicks: 0
+    _endTicks: 0
+  - Name: Snare
+    Color: {r: 0, g: 1, b: 0.21379304, a: 1}
+    _startTicks: 0
+    _endTicks: 0
+  - Name: Violin + Bell
+    Color: {r: 0, g: 1, b: 1, a: 1}
+    _startTicks: 0
+    _endTicks: 0
+  - Name: Violin + Bell + Violin
+    Color: {r: 0, g: 1, b: 1, a: 1}
+    _startTicks: 0
+    _endTicks: 0
+  - Name: Snare
+    Color: {r: 0, g: 1, b: 0.21379304, a: 1}
+    _startTicks: 0
+    _endTicks: 0
+  - Name: Violin + Bell + Violin
+    Color: {r: 0, g: 1, b: 1, a: 1}
+    _startTicks: 0
+    _endTicks: 0
+  - Name: Snare
+    Color: {r: 0, g: 1, b: 0.21379304, a: 1}
+    _startTicks: 0
+    _endTicks: 0
+  - Name: Beat
+    Color: {r: 1, g: 0.76551723, b: 0, a: 1}
+    _startTicks: 0
+    _endTicks: 0
+  ScrollPos: {x: 0, y: 0}
+  Zoom: 1

@@ -1,0 +1,33 @@
+fileFormatVersion: 2
+guid: 2cb2064b7f23578408d36fabcb4cb1f6
+labels:
+- Monitor
+- Component
+- Debug
+- Track
+- Graph
+- Value
+- Console
+- Draw
+- Watch
+- Visual
+- Data
+- Log
+- Renderer
+- Shader
+- Editor
+- Maker
+- Analyze
+- Debugger
+- Debugging
+- Grapher
+timeCreated: 1436475062
+licenseType: Store
+MonoImporter:
+  serializedVersion: 2
+  defaultReferences: []
+  executionOrder: 0
+  icon: {fileID: 2800000, guid: 6e53b8018d80d374185fd213fff3caf3, type: 3}
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 
