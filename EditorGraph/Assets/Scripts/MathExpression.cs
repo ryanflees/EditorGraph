@@ -6,22 +6,33 @@
 
     public abstract class MathExpression : MonoBehaviour
     {
-        public enum AxisAlignType
+        public enum XAxisAlignType
         {
-            LeftOrTop,
+            Left,
+            OneThird,
             Middle,
-            RightOrBottom,
+            Right,
             Custom
         }
 
-        public AxisAlignType HorAlignType = AxisAlignType.Middle;
-        public AxisAlignType VerAlignType = AxisAlignType.Middle;
+        public enum YAxisAlignType
+        {
+            Top,
+            Middle,
+            Bottom,
+            Custom
+        }
+
+        public XAxisAlignType HorAlignType = XAxisAlignType.Middle;
+        public YAxisAlignType VerAlignType = YAxisAlignType.Middle;
 
         public float YScale = 1;
         public float XScale = 1;
 
         public float XAxisOffset = 0;
         public float YAxisOffset = 0;
+
+        public Vector2 ScrollPosition = Vector2.zero;
 
         #region Processing
         public virtual float CalculateFunction(float x)
