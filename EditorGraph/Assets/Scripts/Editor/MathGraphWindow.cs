@@ -98,7 +98,7 @@
 
                 EditorGUILayout.BeginHorizontal();
                 EditorGUILayout.LabelField("X Scale", GUILayout.Width(50));
-                mExpressionList[index].XScale = EditorGUILayout.Slider(mExpressionList[index].XScale, 0.001f, 100);
+                mExpressionList[index].XScale = EditorGUILayout.Slider(mExpressionList[index].XScale, 0.001f, 300);
                 EditorGUILayout.EndHorizontal();
 
                 EditorGUILayout.EndScrollView();
@@ -277,15 +277,23 @@
             }
             if (scale > 20)
             {
-                return 2;
+                return 1;
             }
             if (scale > 10)
             {
-                return 5;
+                return 2;
             }
-            if (scale > 1)
+            if (scale > 5)
+            {
+                return 10;
+            }
+            if (scale >= 3)
             {
                 return 20;
+            }
+            if (scale >= 1)
+            {
+                return 30;
             }
             if (scale > 0.5f)
             {
@@ -325,7 +333,10 @@
             {
                 AddSelectedExpressions();
             }
-
+            if (GUILayout.Button("Refresh", GUILayout.Width(100)))
+            {
+                Repaint();
+            }
             EditorGUILayout.EndHorizontal();
 
             EditorGUILayout.EndVertical();

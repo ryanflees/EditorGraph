@@ -32,6 +32,7 @@
         public float XAxisOffset = 0;
         public float YAxisOffset = 0;
 
+        [HideInInspector]
         public Vector2 ScrollPosition = Vector2.zero;
 
         #region Processing
