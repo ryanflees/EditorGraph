@@ -73,6 +73,21 @@
             return v % 1.0f;
         }
 
+        public Vector4 Floor(Vector4 v)
+        {
+            return new Vector4(Mathf.Floor(v.x), Mathf.Floor(v.y), Mathf.Floor(v.z), Mathf.Floor(v.w));
+        }
+
+        public Vector3 Floor(Vector3 v)
+        {
+            return new Vector3(Mathf.Floor(v.x), Mathf.Floor(v.y), Mathf.Floor(v.z));
+        }
+
+        public Vector2 Floor(Vector2 v)
+        {
+            return new Vector2(Mathf.Floor(v.x), Mathf.Floor(v.y));
+        }
+
         public Vector4 Abs(Vector4 v)
         {
             return new Vector4(Mathf.Abs(v.x), Mathf.Abs(v.y), Mathf.Abs(v.z), Mathf.Abs(v.w));
