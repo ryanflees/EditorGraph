@@ -96,14 +96,16 @@ Shader "CR/Default"
 
             sampler2D _MainTex;
 
-            float n (float2 p)
+            float2 n (float2 p)
             {
                 float2 i = floor(p);
-                float w = p - i;
-                float j = float2 (1.,0.);
-                w = w*w*(3.-w-w);
+                float2 w = p - i;
+                float2 j = float2 (1.,0.);
+                //w = w * w * (3.-w-w);
+                w = (3.-w-w);
+                w = smoothstep(1, 3, w);
                 //return lerp(lerp(r(i), r(i+j), w.x), lerp(r(i+j.yx), r(i+1.), w.x), w.y);
-                return i;
+                return w;
             }
 
             fixed4 frag(v2f IN) : SV_Target
@@ -120,8 +122,8 @@ Shader "CR/Default"
                 float2 uv = IN.texcoord.xy;
                 //return color;
                 half4 color = half4(1, 0, 0, 1);
-                uv *= 5;
-                color.r = n(uv) / 5;
+                uv *= 3.5;
+                color.r = n(uv).y;
                 //color.rgb = half3(0, uv.y, 0);
 
                 return color;
