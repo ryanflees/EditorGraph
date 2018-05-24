@@ -1,6 +1,6 @@
 // Unity built-in shader source. Copyright (c) 2016 Unity Technologies. MIT license (see license.txt)
 
-Shader "CR/Default"
+Shader "CR/Block"
 {
     Properties
     {
@@ -138,6 +138,7 @@ Shader "CR/Default"
                 float2 j = float2 (1.,0.);
                 w = w * w * (3.-w-w);
                 //return r(i + j.yx);
+                //return r(i + float2(1, 1));
                 //return lerp(r(i), r(i+j), w.x);
                 return lerp(lerp(r(i), r(i+j), w.x), lerp(r(i+j.yx), r(i+1.), w.x), w.y);
                 //return lerp(r(i+j.yx), r(i+1.), w.x);
@@ -176,12 +177,12 @@ Shader "CR/Default"
                 half4 color = half4(1, 0, 0, 1);
                 uv *= 3.5;
                 //color.r = n(uv).y;
-                float2 data = a(uv);
-                            //n(uv);
+                float2 data = //a(uv);
+                            n(uv);
                             //r(uv);
 
-                float t = frac(_Distortion * 0.9999);
-                data = smoothstep(t/1.2, t+.1, data.x);
+                // float t = frac(_Distortion * 0.9999);
+                // data = smoothstep(t/1.2, t+.1, data.x);
                 
 
                 //data = r(data);

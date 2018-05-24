@@ -12,7 +12,8 @@
         //return frac(43.*sin(c.x+7.*c.y)*_Size);
         public override float CalculateFunction(float x)
         {
-            return Frac(43 * Mathf.Sin(x + 0.7f * Y));
+            //return Frac(43 * Mathf.Sin(x + 0.7f * Y));
+            return (43 * Mathf.Sin(x + 0.7f * Y));
         }
     }
 }
